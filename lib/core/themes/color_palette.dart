@@ -7,7 +7,7 @@ class AppColorPalettes {
   static const black500 = Colors.black;
   static const gray300 = Color(0xFFc1c7cf);
   static const gray200 = Color.fromARGB(255, 255, 255, 255);
-  static const grey350 = Color(0xFFb3b9c4);
+  static const grey350 = Color.fromARGB(255, 82, 84, 88);
   static const grey1000 = Color.fromARGB(255, 19, 19, 19);
   static const dimColor = Color.fromARGB(255, 74, 83, 99);
 }

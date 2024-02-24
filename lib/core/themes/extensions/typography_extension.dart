@@ -156,10 +156,9 @@ class AppTypographyExtension extends ThemeExtension<AppTypographyExtension> {
         ),
         h1000 = TextStyle(
           color: defaultFontColor,
-          fontWeight: FontWeight.w100,
-          fontSize: 48,
+          fontWeight: FontWeight.w900,
+          fontSize: 40,
           letterSpacing: 0,
-          fontFamily: 'Inter',
         );
 
   /// Create the typography with given styles

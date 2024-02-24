@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:promilo/core/constants/home_page_constants.dart';
 import 'package:promilo/core/themes/app_theme.dart';
+import 'package:promilo/core/widgets/bottom_nav_widget.dart';
+import 'package:promilo/features/home/presentation/page/home_page.dart';
 
 class AppBarWidget extends ConsumerWidget {
-  const AppBarWidget({super.key});
+  final String text;
+  const AppBarWidget({super.key, required this.text});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final constants = ref.watch(homePageConstantsProvider);
     final theme = AppTheme.of(context);
     return AppBar(
       backgroundColor: Colors.white,
@@ -34,13 +35,13 @@ class AppBarWidget extends ConsumerWidget {
                     size: 20,
                   ),
                   onPressed: () {
-                    // Navigator.pop(context);
+                    context.pushReplacement(BottomNaviWidet.routePath);
                   },
                 ),
               ),
             ),
             Text(
-              constants.txtAppbarTitle,
+              text,
               style: TextStyle(
                 color: AppTheme.of(context).colors.text,
                 fontSize: 20.0,

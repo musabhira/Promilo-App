@@ -11,7 +11,7 @@ class HomePageConstants {
   final txtAuthor = 'Author';
   final txt1028Meetups = '1,028 Meetups';
   final txtSeaMore = 'See More';
-  final txtTopTrendMeetup = 'Trending Popular People';
+  final txtTopTrendMeetup = 'Trending Popular Meetups';
 }
 
 @riverpod

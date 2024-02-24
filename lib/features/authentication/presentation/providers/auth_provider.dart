@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:promilo/core/widgets/bottom_nav_widget.dart';
 
 import 'package:promilo/features/authentication/data/models/user_model.dart';
 import 'package:promilo/features/authentication/data/repository/auth_repository_impl.dart';
@@ -30,13 +31,7 @@ class Auth extends _$Auth {
               UserModel(email: email, password: password));
       state = false;
       if (token.token != '') {
-        Future.sync(() => context.go(HomePage.routePath)
-            //  ScaffoldMessenger.of(context).showSnackBar(
-            //   const SnackBar(
-            //     content: Text("Success"),
-            //   ),
-            // ),
-            );
+        Future.sync(() => context.go(BottomNaviWidet.routePath));
       }
     } catch (e) {
       state = false;
