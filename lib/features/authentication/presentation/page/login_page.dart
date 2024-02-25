@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:promilo/core/constants/login_page_constants.dart';
@@ -51,7 +52,7 @@ class LoginPage extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: theme.spaces.space_700,
+                height: theme.spaces.space_400,
               ),
               Center(
                 child: Text(
@@ -60,7 +61,7 @@ class LoginPage extends ConsumerWidget {
                 ),
               ),
               SizedBox(
-                height: theme.spaces.space_300,
+                height: theme.spaces.space_100,
               ),
               AuthUserTextWidget(
                 text: constants.txtSignTitle,
@@ -91,7 +92,7 @@ class LoginPage extends ConsumerWidget {
               ),
               AuthUserWithTextWidget(text: constants.txtSignOtp),
               SizedBox(
-                height: theme.spaces.space_200,
+                height: theme.spaces.space_100,
               ),
               AuthUserTextWidget(
                 text: constants.txtPassword,
@@ -125,7 +126,7 @@ class LoginPage extends ConsumerWidget {
               const OrTextwidget(),
               const SocialMediaIconsWidget(),
               SizedBox(
-                height: theme.spaces.space_300,
+                height: theme.spaces.space_200,
               ),
               const BusinessUserTextWidget(),
               SizedBox(

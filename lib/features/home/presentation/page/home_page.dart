@@ -33,7 +33,7 @@ class HomePage extends ConsumerWidget {
             ),
             const SearchTextFieldWidget(),
             Padding(
-              padding: EdgeInsets.all(theme.spaces.space_200),
+              padding: EdgeInsets.all(theme.spaces.space_150),
               child: const ImageWidget(),
             ),
             Padding(

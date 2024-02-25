@@ -23,11 +23,7 @@ class _BottomNaviWidetState extends State<DemoBottomNaviWidet> {
         controller: controller,
         onPageChanged: (index) {},
         children: const [
-          // Scaffold(),
-          // Scaffold(),
           DescriptionPage(),
-          // Scaffold(),
-          // Scaffold(),
         ],
       ),
       bottomNavigationBar: Container(

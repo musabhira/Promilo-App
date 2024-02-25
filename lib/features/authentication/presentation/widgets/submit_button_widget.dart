@@ -12,23 +12,26 @@ class SubmitButton extends ConsumerWidget {
     final constants = ref.watch(loginPageConstantsProvider);
     final theme = AppTheme.of(context);
     return Center(
-      child: SizedBox(
-        width: theme.spaces.space_100 * 43.125,
-        height: theme.spaces.space_100 * 6.25,
-        child: ElevatedButton(
-          onPressed: onPressed,
-          style: ElevatedButton.styleFrom(
-            foregroundColor: theme.colors.textInverse,
-            backgroundColor: Colors.blue,
-            disabledBackgroundColor: Colors.blue.withOpacity(0.5),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(theme.spaces.space_150),
-              side: BorderSide(color: theme.colors.secondary, width: 3.0),
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: theme.spaces.space_400),
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width,
+          height: theme.spaces.space_100 * 6.25,
+          child: ElevatedButton(
+            onPressed: onPressed,
+            style: ElevatedButton.styleFrom(
+              foregroundColor: theme.colors.textInverse,
+              backgroundColor: Colors.blue,
+              disabledBackgroundColor: Colors.blue.withOpacity(0.5),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(theme.spaces.space_150),
+                side: BorderSide(color: theme.colors.secondary, width: 3.0),
+              ),
             ),
-          ),
-          child: Text(
-            constants.txtIconSummit,
-            style: theme.typography.h500.copyWith(color: Colors.white),
+            child: Text(
+              constants.txtIconSummit,
+              style: theme.typography.h500.copyWith(color: Colors.white),
+            ),
           ),
         ),
       ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:promilo/core/themes/extensions/boxshadow_extension.dart';
 import 'package:promilo/core/themes/extensions/color_extension.dart';
 import 'package:promilo/core/themes/extensions/space_extension.dart';
 import 'package:promilo/core/themes/extensions/typography_extension.dart';

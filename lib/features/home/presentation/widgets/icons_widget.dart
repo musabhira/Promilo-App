@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:promilo/core/themes/app_theme.dart';
-import 'package:share_plus/share_plus.dart';
 
 class IconWidget extends ConsumerWidget {
   const IconWidget({super.key});
@@ -55,10 +54,10 @@ class IconWidget extends ConsumerWidget {
                   ),
                   GestureDetector(
                     onTap: () async {
-                      const content = 'hello';
+                      // const content = 'hello';
 
                       try {
-                        await Share.share(content);
+                        // await Share.share(content);
                       } catch (error) {
                         debugPrint(error.toString());
                       }

@@ -108,7 +108,7 @@ class DescriptionPage extends ConsumerWidget {
             ),
             const SeaMoreWidget(),
             SizedBox(
-              height: theme.spaces.space_100 * 7.5,
+              height: theme.spaces.space_100 * 6.5,
             )
           ],
         ),

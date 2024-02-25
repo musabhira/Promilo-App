@@ -10,7 +10,7 @@ class DotDecoratorWidget extends ConsumerWidget {
     final theme = AppTheme.of(context);
     return Positioned(
       bottom: theme.spaces.space_100 * 10.625,
-      right: theme.spaces.space_100 * 18.75,
+      right: theme.spaces.space_100 * 16.75,
       child: DotsIndicator(
         dotsCount: 5,
         position: 0,
