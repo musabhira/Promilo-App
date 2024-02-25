@@ -37,7 +37,8 @@ class ImageWidget extends ConsumerWidget {
                   return Stack(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius:
+                            BorderRadius.circular(theme.spaces.space_100),
                         child: Image.network(
                           imageUrls[index],
                           fit: BoxFit.cover,
