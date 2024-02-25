@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:promilo/core/themes/app_theme.dart';
 
 class AuthUserTextWidget extends StatelessWidget {
   final String text;
@@ -13,7 +14,8 @@ class AuthUserTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 35, right: 2),
+      padding: EdgeInsets.only(
+          left: AppTheme.of(context).spaces.space_100 * 4.375, right: 2),
       child: Text(
         text,
         style: textStyle,

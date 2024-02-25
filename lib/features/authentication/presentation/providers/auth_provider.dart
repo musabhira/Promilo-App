@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:promilo/core/widgets/bottom_nav_widget.dart';
-
 import 'package:promilo/features/authentication/data/models/user_model.dart';
 import 'package:promilo/features/authentication/data/repository/auth_repository_impl.dart';
 import 'package:promilo/features/authentication/domain/usecases/login_usecase.dart';
-import 'package:promilo/features/home/presentation/page/home_page.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'auth_provider.g.dart';

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:promilo/core/themes/color_palette.dart';
-import 'package:promilo/core/themes/extensions/boxshadow_extension.dart';
 import 'package:promilo/core/themes/extensions/color_extension.dart';
 import 'package:promilo/core/themes/extensions/space_extension.dart';
 import 'package:promilo/core/themes/extensions/typography_extension.dart';
@@ -26,17 +25,6 @@ final _lightTheme = ThemeData(
         linkColor: AppColorPalettes.blue500,
         dimFontColor: AppColorPalettes.dimColor,
         whiteFontColor: AppColorPalettes.gray200),
-    AppBoxShadowExtension(
-        primary: BoxShadow(
-          blurRadius: 34,
-          spreadRadius: -10,
-          color: Colors.black.withOpacity(0.1),
-        ),
-        secondary: BoxShadow(
-          blurRadius: 20,
-          spreadRadius: -10,
-          color: Colors.black.withOpacity(0.2),
-        ))
   ],
 );
 

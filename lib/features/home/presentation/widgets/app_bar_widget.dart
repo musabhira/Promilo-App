@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:promilo/core/themes/app_theme.dart';
 import 'package:promilo/core/widgets/bottom_nav_widget.dart';
-import 'package:promilo/features/home/presentation/page/home_page.dart';
 
 class AppBarWidget extends ConsumerWidget {
   final String text;
@@ -32,7 +31,7 @@ class AppBarWidget extends ConsumerWidget {
                   icon: Icon(
                     Icons.arrow_back_ios,
                     color: theme.colors.text,
-                    size: 20,
+                    size: theme.spaces.space_100 * 2.5,
                   ),
                   onPressed: () {
                     context.pushReplacement(BottomNaviWidet.routePath);
@@ -44,7 +43,7 @@ class AppBarWidget extends ConsumerWidget {
               text,
               style: TextStyle(
                 color: AppTheme.of(context).colors.text,
-                fontSize: 20.0,
+                fontSize: theme.spaces.space_100 * 2.5,
                 fontWeight: FontWeight.bold,
               ),
             ),

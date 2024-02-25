@@ -78,8 +78,8 @@ class MeetupCard extends ConsumerWidget {
                                 onTap: () {},
                                 child: Container(
                                   alignment: Alignment.center,
-                                  height: 25,
-                                  width: 80,
+                                  height: theme.spaces.space_100 * 3.125,
+                                  width: theme.spaces.space_100 * 10,
                                   decoration: BoxDecoration(
                                     color: theme.colors.secondary,
                                     borderRadius: BorderRadius.circular(5),
@@ -143,45 +143,3 @@ class MeetupCard extends ConsumerWidget {
     );
   }
 }
-// Card(
-//               margin: const EdgeInsets.all(10.0),
-//               child: Column(
-//                 crossAxisAlignment: CrossAxisAlignment.start,
-//                 children: [
-//                   const ListTile(
-//                     leading: CircleAvatar(
-//                       backgroundImage: NetworkImage(
-//                         'https://iuk.ktn-uk.org/wp-content/uploads/2021/01/AdobeStock_375393450-scaled-e1611136805546.jpeg',
-//                       ),
-//                     ),
-//                     title: Text('Author'),
-//                     subtitle: Text('Meetups'),
-//                   ),
-//                   const Divider(),
-//                   Padding(
-//                     padding: const EdgeInsets.all(8.0),
-//                     child: Row(
-//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                       children: List.generate(
-//                         5,
-//                         (index) => CircleAvatar(
-//                           // Generate initials from "Author" (replace with actual data)
-//                           backgroundImage: NetworkImage(
-//                             'https://ui-avatars.com/api/?name=${'Author'[0]}${index + 1}',
-//                           ),
-//                           radius: 15,
-//                         ),
-//                       ),
-//                     ),
-//                   ),
-//                   const Spacer(),
-//                   Align(
-//                     alignment: Alignment.bottomRight,
-//                     child: TextButton(
-//                       onPressed: () {},
-//                       child: const Text('See More'),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//             );

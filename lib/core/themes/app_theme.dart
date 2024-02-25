@@ -20,8 +20,4 @@ final class AppTheme {
   AppTypographyExtension get typography {
     return Theme.of(context).extension<AppTypographyExtension>()!;
   }
-
-  AppBoxShadowExtension get boxShadow {
-    return Theme.of(context).extension<AppBoxShadowExtension>()!;
-  }
 }

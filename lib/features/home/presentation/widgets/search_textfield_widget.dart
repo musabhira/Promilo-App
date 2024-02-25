@@ -12,7 +12,7 @@ class SearchTextFieldWidget extends ConsumerWidget {
     final theme = AppTheme.of(context);
     return Container(
       width: MediaQuery.of(context).size.width,
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: EdgeInsets.symmetric(horizontal: theme.spaces.space_300),
       child: TextField(
         decoration: InputDecoration(
           filled: true,
@@ -20,18 +20,18 @@ class SearchTextFieldWidget extends ConsumerWidget {
           hintText: constants.txtSearch,
           hintStyle: theme.typography.h600,
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10.0),
-            borderSide: const BorderSide(color: Colors.red, width: 3),
+            borderRadius: BorderRadius.circular(theme.spaces.space_100 * 1.25),
+            borderSide: BorderSide(color: theme.colors.secondary, width: 3),
           ),
           prefixIcon: Icon(
             Icons.search_outlined,
             color: theme.colors.text,
-            size: 30,
+            size: theme.spaces.space_100 * 3.75,
           ),
-          suffixIcon: const Icon(
+          suffixIcon: Icon(
             Icons.mic_none_rounded,
             color: Colors.black,
-            size: 30,
+            size: theme.spaces.space_100 * 3.75,
           ),
           contentPadding: const EdgeInsets.symmetric(vertical: 4.0),
         ),

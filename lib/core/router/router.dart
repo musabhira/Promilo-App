@@ -2,6 +2,7 @@ import 'package:promilo/core/widgets/bottom_nav_widget.dart';
 import 'package:promilo/features/authentication/presentation/page/login_page.dart';
 import 'package:promilo/features/home/presentation/page/description_page.dart';
 import 'package:promilo/features/home/presentation/page/home_page.dart';
+import 'package:promilo/features/home/presentation/widgets/demo_bottom_navi_bar.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:go_router/go_router.dart';
 
@@ -25,6 +26,10 @@ final router = GoRouter(
     GoRoute(
       path: BottomNaviWidet.routePath,
       builder: (context, state) => const BottomNaviWidet(),
+    ),
+    GoRoute(
+      path: DemoBottomNaviWidet.routePath,
+      builder: (context, state) => const DemoBottomNaviWidet(),
     ),
   ],
 );

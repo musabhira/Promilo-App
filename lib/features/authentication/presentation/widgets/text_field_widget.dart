@@ -38,7 +38,8 @@ class TextFieldWidget extends ConsumerWidget {
                 color: theme.colors.secondary,
               )),
           contentPadding: EdgeInsets.symmetric(
-              horizontal: theme.spaces.space_200, vertical: 12),
+              horizontal: theme.spaces.space_200,
+              vertical: theme.spaces.space_100 * 1.5),
         ),
       ),
     );

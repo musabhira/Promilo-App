@@ -10,7 +10,7 @@ class AuthUserWithTextWidget extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = AppTheme.of(context);
     return Padding(
-        padding: const EdgeInsets.only(right: 32),
+        padding: EdgeInsets.only(right: theme.spaces.space_400),
         child: Row(children: [
           const Spacer(),
           Text(

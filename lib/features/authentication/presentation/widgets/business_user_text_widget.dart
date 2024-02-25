@@ -11,7 +11,7 @@ class BusinessUserTextWidget extends ConsumerWidget {
     final constants = ref.watch(loginPageConstantsProvider);
     final theme = AppTheme.of(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: EdgeInsets.symmetric(horizontal: theme.spaces.space_300),
       child: Row(
         children: [
           Text(

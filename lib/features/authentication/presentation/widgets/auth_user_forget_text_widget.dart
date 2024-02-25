@@ -19,8 +19,8 @@ class AuthUserForgetTextWidget extends ConsumerWidget {
             right: theme.spaces.space_400, left: theme.spaces.space_300),
         child: Row(children: [
           Container(
-            width: 20,
-            height: 20,
+            width: theme.spaces.space_100 * 2.5,
+            height: theme.spaces.space_100 * 2.5,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
               border: Border.all(

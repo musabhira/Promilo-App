@@ -1,5 +1,3 @@
-import 'package:riverpod_annotation/riverpod_annotation.dart';
-
 class BottomNavWidgetConstants {
   static const txtHome = 'Home';
   static const txtProlet = 'Prolet';

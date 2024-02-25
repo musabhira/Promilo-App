@@ -1,7 +1,5 @@
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:promilo/core/constants/home_page_constants.dart';
 import 'package:promilo/core/themes/app_theme.dart';
